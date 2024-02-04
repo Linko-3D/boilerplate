@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("JavaScript is connected and running!");
-});
+icons.addEventListener("click", () => {
+    nav.classList.toggle("active");
+})
