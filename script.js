@@ -1,3 +1,3 @@
-icons.addEventListener("click", () => {
-    nav.classList.toggle("active");
-})
+burger_icon.addEventListener("click", function() {
+    this.classList.toggle("active");
+});

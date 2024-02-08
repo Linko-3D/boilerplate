@@ -23,72 +23,21 @@ body {
     line-height: 2rem;
 }
 
-nav {
-    background-color: skyblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-size: calc(0.5rem + 1.5vw);
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-}
-
-#icons {
-    cursor: pointer;
-    display: none;;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-#aaa {
+#burger_icon {
     display: none;
 }
 
-@media (max-width: 1000px) {
-    #icons {
+#burger_icon::before {
+    content: "\2630";
+}
+
+#burger_icon.active::before {
+    content: "\2715";
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    #burger_icon {
         display: block;
-
-    }
-
-    #icons:before {
-        content: "\2630"
-    }
-
-    .active #icons:before {
-        content: "\2715";
-    }
-
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 5%;
-        flex-direction: column;
-        background-color: skyblue;
-        width: 100%;
-        text-align: center;
-        transition: 0.25s;
-    }
-
-    nav li {
-        padding: 3px 0;
-    }
-
-    nav li:hover {
-        background: rgb(177, 217, 233);
-    }
-
-    nav.active ul {
-        left: 0;
     }
 }
