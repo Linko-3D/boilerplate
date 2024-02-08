@@ -23,67 +23,60 @@ body {
     line-height: 2rem;
 }
 
-nav {
-    background-color: skyblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-caf ul {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-}
-
-#icons {
-    cursor: pointer;
+#burger_icon {
     display: none;
 }
 
-
-
-
-
-
-
-li {
-    list-style: none;
+#burger_icon::before {
+    content: "\2630";
 }
 
-@media (max-width: 1000px) {
-    #icons {
+#burger_icon.active::before {
+    content: "\2715";
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    #burger_icon {
         display: block;
-
     }
+}
 
-    #icons:before {
-        content: "\2630"
-    }
 
-    .active #icons:before {
-        content: "\2715";
-    }
 
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 5%;
-        flex-direction: column;
-        background-color: skyblue;
-        width: 100%;
-        text-align: center;
-    }
 
-    nav li {
-        padding: 3px 0;
-    }
 
-    nav li:hover {
-        background: rgb(177, 217, 233);
-    }
 
-    nav.active ul {
-        left: 0;
+
+
+
+#mobile_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow-y: auto
+}
+
+#mobile_menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Show the menu when #burger_icon is active */
+#burger_icon.active + #mobile_menu {
+    display: block;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    #burger_icon {
+        display: block;
     }
 }

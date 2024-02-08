@@ -23,8 +23,28 @@ body {
     line-height: 2rem;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.rec {
+    background-color: violet;
+    height: 1000px;
+    width: 100px;
+    margin: 50px;
+}
+
 #burger_icon {
     display: none;
+    cursor: pointer;
 }
 
 #burger_icon::before {
@@ -35,7 +55,6 @@ body {
     content: "\2715";
 }
 
-/* Mobile styles */
 @media screen and (max-width: 768px) {
     #burger_icon {
         display: block;
