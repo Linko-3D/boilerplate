@@ -49,7 +49,21 @@ header {
     padding: 0px 20px;
 }
 
+input {
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgb(37, 43, 52);
+    padding-left: 20px; /* Left margin */
+}
 
+input:focus {
+    outline: 2px solid rgb(112, 186, 250); /* Change '2px' to adjust thickness and 'blue' to your desired color */
+}
+
+input::placeholder {
+    color: rgb(168, 170, 174);
+
+}
 
 nav {
     background-color: rgb(54, 61, 74);
