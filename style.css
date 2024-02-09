@@ -46,13 +46,16 @@ header {
 }
 
 .padding {
-    padding: 0px 20px;
+    padding: 0px 170px;
+    white-space: nowrap;
 }
 
 input {
     border-radius: 10px;
     height: 40px;
     background-color: rgb(37, 43, 52);
+    color: rgb(224, 224, 224);
+    width: 100%;
     padding-left: 20px; /* Left margin */
 }
 
@@ -90,6 +93,7 @@ nav {
 #burger_icon.active::before {
     content: "\2715";
 }
+
 
 @media screen and (max-width: 768px) {
     #burger_icon {
