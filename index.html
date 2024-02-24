@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-@font-face {
-  font-family: 'Bookerly';
-  src: url('path/to/bookerly.woff2') format('woff2'), /* Modern Browsers */
-       url('path/to/bookerly.woff') format('woff');   /* Legacy Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
+    @font-face {
+      font-family: 'Bookerly';
+      src: url('path/to/bookerly.woff2') format('woff2'), /* Modern Browsers */
+           url('path/to/bookerly.woff') format('woff');   /* Legacy Browsers */
+      font-weight: normal;
+      font-style: normal;
+    }
 
     * {
       margin: 0;
@@ -35,56 +34,60 @@
       line-height: 2rem;
     }
 
-    /* Hide menu icon on screens wider than 768px (adjust as needed) */
-    @media (min-width: 769px) {
-      #menu-icon {
-        display: none;
-      }
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 42px;
     }
 
-  h2 {
-    font-size: 2.1rem;
-    margin-bottom: 42px;
-  }
+    p {
+      margin-bottom: 20px;
+      line-height: 1.42;
+    }
 
-  p {
-    margin-bottom: 20px; /* Adjust the value as needed */
-    line-height: 1.42;
-  }
+    .container {
+      margin: 0px 11.5vw;
+      margin-top: 83px;
+    }
 
-  .container {
-    margin: 0px 11.5vw;
-    margin-top: 83px;
-  }
+    #menu-icon {
+        display: none;
+      }
 
-  </style>
-  <title>Document</title>
+    @media (max-width: 768px) {
+      #menu-icon {
+        display: block;
+      }
+      body {
+        font-size: 1.2rem;
+      }
+    }
+      </style>
+      <title>Document</title>
 </head>
 <body>
   
   <!-- Burger icon -->
   <ion-icon name="menu" id="menu-icon"></ion-icon>
 
-
   <div class="container">
-  <h2>Chapter 1: Introduction</h2>
-  <p>
-  Welcome to SQL and thank you so much for picking up my book. I sincerely hope that this book can help you master SQL fast and introduce you to the exciting world of databases.
-</p>
+    <h2>Chapter 1: Introduction</h2>
+    <p>
+      Welcome to SQL and thank you so much for picking up my book. I sincerely hope that this book can help you master SQL fast and introduce you to the exciting world of databases.
+    </p>
 
-<p>
-This book adopts a hands-on approach to learning. As we progress from one chapter to another, we'll be doing various exercices. You are strongly encouraged to follow along these exercises.
-</p>
+    <p>
+      This book adopts a hands-on approach to learning. As we progress from one chapter to another, we'll be doing various exercises. You are strongly encouraged to follow along with these exercises.
+    </p>
 
-<p>
-At the end of the book, we'll also be working on a new project together. This project involves building a SQL database for a sports complex. We'll learn to build the database, insert data, perform queries, write routines, views, cursors, and more.
-</p>
+    <p>
+      At the end of the book, we'll also be working on a new project together. This project involves building a SQL database for a sports complex. We'll learn to build the database, insert data, perform queries, write routines, views, cursors, and more.
+    </p>
 
-<p>
-  Excited and ready to start embarking on our SQL learning journey? Let's do it!
-</p>
+    <p>
+      Excited and ready to start embarking on our SQL learning journey? Let's do it!
+    </p>
+  </div>
 
-</div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
