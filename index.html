@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  </style>
+  <title>Document</title>
 </head>
 <body>
-    <header>
-        <div id="top" class="flex">
-            <div class="flex padding">
-                <div id="burger_icon"></div>
-                <div>LOGO</div>
-            </div>
+  <ion-icon name="menu" id="menu-icon"></ion-icon>
 
-            <div class="search-bar">
-                <input type="text" placeholder="Recherche" />
-                <i class="fas fa-search"></i>
-            </div>
-            
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-            <div class="padding">Mon compte</div>
-            
-        </div>
-        
-        <nav class="flex padding">AAA</nav>
-    </header>
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
 
-    <div class="rec"></div>
-    
-    <script src="script.js"></script>
+    menuIcon.addEventListener('click', function() {
+      if (menuIcon.name === 'menu') {
+        menuIcon.name = 'close';
+      } else {
+        menuIcon.name = 'menu';
+      }
+    });
+  </script>
 </body>
 </html>
