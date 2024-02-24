@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #burger_btn {
+      width: 30rem;
+      cursor: pointer;
+      z-index: 10;
+      position: fixed;
+    }
+    
+    #burger_btn::before {
+      content: "\2630";
+    }
+    
+    #burger_btn.active::before {
+      content: "\2715";
+    }
+    
+    nav {
+      background-color: brown;
+      position: fixed;
+      inset: 0;
+      gap: 10px;
+    }
+    
+    @media (max-width: 40em) {
+      #burger_btn {
+        display: block;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="burger_btn"></div>
+
+  <nav>
+  </nav>
+
+  <script>
+    const burger_btn = document.getElementById("burger_btn");
+
+    burger_btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
