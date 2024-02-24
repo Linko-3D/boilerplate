@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: 'Bookerly';
+  src: url('path/to/bookerly.woff2') format('woff2'), /* Modern Browsers */
+       url('path/to/bookerly.woff') format('woff');   /* Legacy Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       list-style: none;
-      font-family: "Roboto","Arial",sans-serif;
+      font-family: 'Bookerly', serif;
       text-decoration: none;
       border: none;
     }
@@ -21,14 +28,11 @@
     }
 
     body {
-      background-color: rgb(15, 15, 15);
       background-color: black;
-      color: rgb(241, 241, 241);
-      color: white;
       color: rgb(172, 172, 172);
-      text-align: justify;
-      font-size: 1.2rem;
+      font-size: 1.45rem;
       font-weight: 400;
+      line-height: 2rem;
     }
 
     /* Hide menu icon on screens wider than 768px (adjust as needed) */
@@ -39,18 +43,48 @@
     }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+    margin-bottom: 42px;
+  }
+
+  p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+    line-height: 1.42;
+  }
+
+  .container {
+    margin: 0px 11.5vw;
+    margin-top: 83px;
   }
 
   </style>
   <title>Document</title>
 </head>
 <body>
-  <h2>Trouver des annonces</h2>
-  Pour trouver des annonces fiables, consultez le Top 50 de Sexemodel en triant par évaluation et en spécifiant la ville (cela affichera aussi celles qui l'ont mise en ville proche, certaines s'en servent pour indiquer leur tournée). Sur PC (ou avec l'option affichage PC dans les paramètres du navigateur sur smartphone), une info-bulle verte affiche les notes personnelles des membres. Souvent, ils détaillent la rencontre et n'hésitent pas à critiquer. Ils partagent parfois les tarifs. La satisfaction va dépendre des préférences du client, certains recherchent une expérience de type petite amie avec de la tendresse et des bisous (GFE : Girlfriend Experience), d'autres une expérience intense (PSE : Pornstar Experience).
+  
   <!-- Burger icon -->
   <ion-icon name="menu" id="menu-icon"></ion-icon>
 
+
+  <div class="container">
+  <h2>Chapter 1: Introduction</h2>
+  <p>
+  Welcome to SQL and thank you so much for picking up my book. I sincerely hope that this book can help you master SQL fast and introduce you to the exciting world of databases.
+</p>
+
+<p>
+This book adopts a hands-on approach to learning. As we progress from one chapter to another, we'll be doing various exercices. You are strongly encouraged to follow along these exercises.
+</p>
+
+<p>
+At the end of the book, we'll also be working on a new project together. This project involves building a SQL database for a sports complex. We'll learn to build the database, insert data, perform queries, write routines, views, cursors, and more.
+</p>
+
+<p>
+  Excited and ready to start embarking on our SQL learning journey? Let's do it!
+</p>
+
+</div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
