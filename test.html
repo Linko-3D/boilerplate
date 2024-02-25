@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel Example</title>
+<style>
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .carousel .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .carousel .slide {
+        min-width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="carousel">
+    <div class="slides">
+        <div class="slide" style="background-color: #1abc9c;">Slide 1</div>
+        <div class="slide" style="background-color: #3498db;">Slide 2</div>
+        <div class="slide" style="background-color: #9b59b6;">Slide 3</div>
+        <div class="slide" style="background-color: #f1c40f;">Slide 4</div>
+    </div>
+</div>
+
+<script>
+    const carousel = document.querySelector('.carousel');
+    const slides = carousel.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+
+    const prevBtn = document.createElement('button');
+    prevBtn.textContent = 'Prev';
+    prevBtn.addEventListener('click', () => {
+        slides.appendChild(slides.firstElementChild);
+    });
+
+    const nextBtn = document.createElement('button');
+    nextBtn.textContent = 'Next';
+    nextBtn.addEventListener('click', () => {
+        slides.insertBefore(slides.lastElementChild, slides.firstElementChild);
+    });
+
+    carousel.appendChild(prevBtn);
+    carousel.appendChild(nextBtn);
+</script>
+
+</body>
+</html>
